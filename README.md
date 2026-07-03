@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # musicCode
 =======
 # jhosep-id21.github.io
