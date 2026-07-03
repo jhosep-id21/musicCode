@@ -1,0 +1,294 @@
+:root {
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --surface-strong: #e9eef9;
+    --text: #102a43;
+    --muted: #475569;
+    --primary: #2d4059;
+    --accent: #ff7a00;
+    --accent-soft: #ffb366;
+    --border: rgba(16, 42, 67, 0.18);
+    --shadow: 0 20px 50px rgba(16, 42, 67, 0.12);
+    --link: #ffffff;
+    --hero-overlay: rgba(45, 64, 89, 0.55);
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0b1120;
+        --surface: #16213f;
+        --surface-strong: #1f2a54;
+        --text: #f8fafc;
+        --muted: #cbd5e1;
+        --primary: #0f172a;
+        --accent: #fb923c;
+        --accent-soft: #fcd34d;
+        --border: rgba(148, 163, 184, 0.20);
+        --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        --link: #ffffff;
+        --hero-overlay: rgba(2, 10, 23, 0.65);
+    }
+}
+
+[data-theme="light"] {
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --surface-strong: #e9eef9;
+    --text: #102a43;
+    --muted: #475569;
+    --primary: #2d4059;
+    --accent: #ff7a00;
+    --accent-soft: #ffb366;
+    --border: rgba(16, 42, 67, 0.18);
+    --shadow: 0 20px 50px rgba(16, 42, 67, 0.12);
+    --link: #ffffff;
+    --hero-overlay: rgba(45, 64, 89, 0.55);
+}
+
+[data-theme="dark"] {
+    --bg: #0b1120;
+    --surface: #16213f;
+    --surface-strong: #1f2a54;
+    --text: #f8fafc;
+    --muted: #cbd5e1;
+    --primary: #0f172a;
+    --accent: #fb923c;
+    --accent-soft: #fcd34d;
+    --border: rgba(148, 163, 184, 0.20);
+    --shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    --link: #ffffff;
+    --hero-overlay: rgba(2, 10, 23, 0.65);
+}
+
+body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+.nav-links,
+.card,
+.bloque-info,
+.form-comentarios,
+.formulario-suscripcion,
+.comentarios,
+.comentario-ejemplo,
+.interactive-panel,
+.texto-info,
+.orden,
+.hero-texto,
+.keyboard,
+.key,
+.scale-result,
+.chord-result {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+nav {
+    background: var(--primary) !important;
+}
+
+.nav-links {
+    background: transparent !important;
+}
+
+.theme-toggle,
+.menu-toggle {
+    background: transparent !important;
+    color: var(--link) !important;
+    border: none !important;
+}
+
+.nav-link,
+.logo span {
+    color: var(--link) !important;
+}
+
+.nav-link:hover,
+.btn-arriba:hover,
+.form-comentarios button:hover,
+.comentario-ejemplo:hover {
+    background: var(--accent-soft) !important;
+    color: var(--text) !important;
+}
+
+.hero .overlay {
+    background-color: var(--hero-overlay) !important;
+}
+
+.hero-texto h1 {
+    color: var(--text) !important;
+    background-color: transparent !important;
+}
+
+/* Ajustes específicos para cada tema para mantener la paleta pero mejorar contraste */
+[data-theme="light"] .hero-texto h1 {
+    background-color: rgba(255, 255, 255, 0.72) !important;
+}
+
+[data-theme="dark"] .hero-texto h1 {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+.subtitulo-box {
+    background: var(--primary) !important;
+    color: var(--link) !important;
+}
+
+.texto-info,
+.comentarios,
+.comentario-ejemplo {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+}
+
+.form-comentarios input,
+.form-comentarios textarea {
+    background: var(--surface-strong) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+.form-comentarios button,
+.btn-arriba,
+.a.btn-terciario,
+.btn-principal {
+    background: var(--accent) !important;
+    color: #fff !important;
+}
+
+.form-comentarios button:hover,
+.btn-arriba:hover {
+    background: var(--accent-soft) !important;
+    color: var(--text) !important;
+}
+
+.comentario-ejemplo {
+    border-top: 5px solid var(--accent-soft) !important;
+}
+
+.key.black {
+    background: #1b243b !important;
+    color: #f8fafc !important;
+}
+
+/* Mejor contraste de tarjetas en modo oscuro sin cambiar paleta */
+[data-theme="dark"] .card,
+[data-theme="dark"] .bloque-info,
+[data-theme="dark"] .interactive-panel,
+[data-theme="dark"] .texto-info {
+    background: rgba(255,255,255,0.03) !important;
+    border-color: rgba(255,255,255,0.04) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45) !important;
+}
+
+[data-theme="dark"] .hero-texto h1,
+[data-theme="dark"] .hero-texto p {
+    background: rgba(255,255,255,0.03) !important;
+    color: var(--link) !important;
+}
+
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .card h4,
+[data-theme="dark"] .bloque-info h2,
+[data-theme="dark"] .panel-header h2,
+[data-theme="dark"] .subtitulo-box h2 {
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .card p,
+[data-theme="dark"] .bloque-info p,
+[data-theme="dark"] .panel-header p,
+[data-theme="dark"] .texto-info p {
+    color: rgba(248,250,252,0.8) !important;
+}
+
+/* Comentarios: nombre en blanco en modo oscuro */
+[data-theme="dark"] .comentario-ejemplo h4 {
+    color: var(--link) !important;
+}
+
+/* Hero: variantes para modo oscuro */
+[data-theme="dark"] .hero-texto h1 {
+    background: rgba(255,255,255,0.04) !important;
+    color: var(--link) !important;
+}
+
+/* Asegurar que los títulos dentro de los recuadros primarios sean legibles (blancos) */
+.subtitulo-box h2,
+.subtitulo-box {
+    color: var(--link) !important;
+}
+
+[data-theme="dark"] .hero-texto p {
+    background: rgba(255,255,255,0.03) !important;
+    color: rgba(248,250,252,0.9) !important;
+}
+
+/* Formulario: colores y contraste en modo oscuro */
+[data-theme="dark"] .form-comentarios,
+[data-theme="dark"] .formulario-suscripcion {
+    background: rgba(255,255,255,0.02) !important;
+    border-color: rgba(255,255,255,0.04) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.55) !important;
+}
+
+[data-theme="dark"] .form-comentarios input,
+[data-theme="dark"] .form-comentarios textarea,
+[data-theme="dark"] .form-comentarios select,
+[data-theme="dark"] .formulario-suscripcion input,
+[data-theme="dark"] .formulario-suscripcion textarea,
+[data-theme="dark"] .formulario-suscripcion select {
+    background: rgba(255,255,255,0.03) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .form-comentarios input::placeholder,
+[data-theme="dark"] .form-comentarios textarea::placeholder,
+[data-theme="dark"] .formulario-suscripcion input::placeholder,
+[data-theme="dark"] .formulario-suscripcion textarea::placeholder {
+    color: rgba(248,250,252,0.55) !important;
+}
+
+/* Formularios: etiquetas y placeholders legibles en modo oscuro */
+[data-theme="dark"] .formulario-suscripcion label,
+[data-theme="dark"] .form-comentarios label,
+[data-theme="dark"] .campo label,
+[data-theme="dark"] .tema-musical label,
+[data-theme="dark"] .formulario-suscripcion .campo label {
+    color: var(--link) !important;
+    font-weight: 600 !important;
+}
+
+[data-theme="dark"] .formulario-suscripcion input::placeholder,
+[data-theme="dark"] .formulario-suscripcion textarea::placeholder,
+[data-theme="dark"] .formulario-suscripcion select::placeholder,
+[data-theme="dark"] .tema-musical input::placeholder,
+[data-theme="dark"] .tema-musical textarea::placeholder {
+    color: rgba(248,250,252,0.6) !important;
+}
+
+/* Asegurar color del texto dentro de selects en modo oscuro */
+[data-theme="dark"] .formulario-suscripcion select,
+[data-theme="dark"] .form-comentarios select,
+[data-theme="dark"] .tema-musical select {
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .form-comentarios button,
+[data-theme="dark"] .formulario-suscripcion button {
+    background: var(--accent) !important;
+    color: var(--link) !important;
+}
+
+.key.active {
+    background: var(--accent) !important;
+    color: #fff !important;
+}

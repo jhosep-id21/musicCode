@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 
@@ -62,4 +63,76 @@
     <script src="../js/app.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribirse - MusicCode</title>
+    <link rel="stylesheet" href="/css/estiloSuscribirme.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="shortcut icon" href="/img/111.ico" type="x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="contenedor-nav">
+            <div class="logo">
+                <img src="/img/111.ico" alt="MusicCode">
+                <span>MusicCode</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Activar modo oscuro" title="Cambiar tema">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+            </button>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <div class="nav-links">
+                <a href="/index.html#inicio" class="nav-link">Inicio</a>
+                <a href="/index.html#cursos" class="nav-link">Cursos</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="letrasG">Suscríbete a <em>MusicCode</em></h1>
+        <p>Recibe noticias, ejercicios y consejos musicales directamente en tu correo.</p>
+    </header>
+    <section class="tema-musical">
+        <h2>Formulario de suscripción</h2>
+
+        <form action="exito.html" class="formulario-suscripcion">
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="nivel">Nivel musical:</label>
+                <select id="nivel" name="nivel">
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-principal">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MusicCode. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/app.js"></script>
+    <script src="/js/interactivo.js"></script>
+</body>
+
+>>>>>>> aa7a2d96f90710331b320c594a5c5883e2087ead
 </html>
