@@ -49,6 +49,14 @@ function applyTheme(theme) {
     if (!themeToggle) return;
 
     themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Activar modo claro' : 'Activar modo oscuro');
+
+    const iconSun = themeToggle.querySelector('.icon-sun');
+    const iconMoon = themeToggle.querySelector('.icon-moon');
+
+    if (iconSun && iconMoon) {
+        iconSun.style.display = theme === 'dark' ? 'none' : 'inline';
+        iconMoon.style.display = theme === 'dark' ? 'inline' : 'none';
+    }
 }
 
 // Inicializa la tabla interactiva de acordes

@@ -13,8 +13,8 @@
 }
 /* GENERAL */
 body {
-    background-color: #f5f5f7;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
 }
@@ -29,16 +29,16 @@ body {
 
 .mensaje-exito h1 {
     font-size: 32px;
-    color: #2d4059;
+    color: var(--primary);
     margin-bottom: 10px;
 }
 
 .mensaje-exito p {
-    color: #555;
+    color: var(--muted);
     margin-bottom: 20px;
 }
 nav {
-    background-color: #2d4059;
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     width: 100%;
@@ -65,13 +65,13 @@ nav {
 }
 
 .logo span {
-    color: white;
+    color: var(--link);
     font-size: 22px;
     font-weight: 600;
 }
 .btn-terciario {
-    background-color: #ff7a00;
-    color: white;
+    background-color: var(--accent);
+    color: var(--link);
     padding: 12px 25px;
     border-radius: 6px;
     text-decoration: none;
@@ -80,7 +80,7 @@ nav {
 }
 
 .btn-terciario:hover {
-    background-color: #e56700;
+    background-color: var(--accent-soft);
 }
 @media (max-width: 768px) {
     .menu-toggle {
@@ -90,7 +90,7 @@ nav {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2d4059;
+        background-color: var(--primary);
         position: absolute;
         top: 70px;
         left: 0;

@@ -14,15 +14,15 @@
 }
 /* GENERAL */
 body {
-    background-color: #f5f5f7;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
 }
 
 /* NAVBAR (igual que index) */
 nav {
-    background-color: #2d4059;
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     width: 100%;
@@ -49,7 +49,7 @@ nav {
 }
 
 .logo span {
-    color: white;
+    color: var(--link);
     font-size: 22px;
     font-weight: 600;
 }
@@ -60,13 +60,13 @@ nav {
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--link);
     text-decoration: none;
     font-size: 14px;
 }
 
 .nav-link:hover {
-    color: #ffd369;
+    color: var(--accent-soft);
 }
 
 /* HEADER */
@@ -78,26 +78,26 @@ header {
 .letrasG {
     font-size: 36px;
     font-weight: 600;
-    color: #2d4059;
+    color: var(--primary);
 }
 
 .letrasG em {
-    color: #ff7a00;
+    color: var(--accent);
 }
 
 header p {
     margin-top: 10px;
-    color: #555;
+    color: var(--muted);
 }
 
 /* CONTENEDOR FORM */
 .tema-musical {
-    background: #fff;
+    background: var(--surface);
     border-radius: 15px;
     padding: 30px;
     margin: 30px auto;
     max-width: 500px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: var(--shadow);
 }
 
 /* FORM */
@@ -110,30 +110,32 @@ header p {
 /* CAMPOS */
 .campo label {
     font-weight: 600;
-    color: #2d4059;
+    color: var(--primary);
 }
 
 .campo input,
 .campo select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 8px;
     font-family: inherit;
     font-size: 14px;
+    background: var(--surface-strong);
+    color: var(--text);
 }
 
 .campo input:focus,
 .campo select:focus {
     outline: none;
-    border-color: #ff7a00;
-    box-shadow: 0 0 0 3px rgba(255,122,0,0.2);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(255,122,0,0.12);
 }
 
 /* BOTÓN */
 .btn-principal {
-    background-color: #ff7a00;
-    color: white;
+    background-color: var(--accent);
+    color: var(--link);
     padding: 12px;
     border: none;
     border-radius: 6px;
@@ -143,13 +145,13 @@ header p {
 }
 
 .btn-principal:hover {
-    background-color: #e56700;
+    background-color: var(--accent-soft);
 }
 
 /* FOOTER */
 footer {
-    background-color: #2d4059;
-    color: white;
+    background-color: var(--primary);
+    color: var(--link);
     text-align: center;
     padding: 15px;
     margin-top: 30px;
@@ -162,7 +164,7 @@ footer {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2d4059;
+        background-color: var(--primary);
         position: absolute;
         top: 70px;
         left: 0;

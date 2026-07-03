@@ -13,8 +13,8 @@
 }
 /* GENERAL */
 body {
-    background-color: #f5f5f7;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Poppins', sans-serif;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -22,7 +22,7 @@ body {
 
 /* Nav */
 nav {
-    background-color: #2d4059;
+    background-color: var(--primary);
     position: fixed;
     top: 0;
     width: 100%;
@@ -49,7 +49,7 @@ nav {
 }
 
 .logo span {
-    color: white;
+    color: var(--link);
     font-size: 22px;
     font-weight: 600;
 }
@@ -60,14 +60,14 @@ nav {
 }
 
 .nav-link {
-    color: #fff;
+    color: var(--link);
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s;
 }
 
 .nav-link:hover {
-    color: #ffd369;
+    color: var(--accent-soft);
 }
 
 /* HERO */
@@ -87,7 +87,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #2d405965;
+    background-color: var(--hero-overlay);
 }
 
 .hero-texto {
@@ -96,14 +96,15 @@ nav {
 }
 
 .hero-texto h1 {
-    color: #000000;
+    color: var(--text);
     font-size: 70px;
     font-weight: 600;
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: var(--surface);
     padding: 15px 30px;
     border-radius: 20px;
+    border: 1px solid var(--border);
 
     display: inline-block;
 }
@@ -130,8 +131,8 @@ nav {
 
 .subtitulo-box {
     width: 35%;
-    background-color: #415b7c;
-    color: rgb(245, 245, 245);
+    background-color: var(--surface-strong);
+    color: var(--link);
     border-radius: 20px;
     padding: 40px;
     display: flex;
@@ -146,10 +147,10 @@ nav {
 
 .texto-info {
     width: 65%;
-    background-color: white;
+    background-color: var(--surface);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow);
     display: flex;
     align-items: center;
 }
@@ -189,7 +190,7 @@ nav {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #2d4059;
+        background-color: var(--primary);
         position: absolute;
         top: 70px;
         left: 0;
@@ -215,8 +216,27 @@ nav {
 }
 
 .nota {
-    color: #2d4059;
+    color: var(--primary);
     font-weight: 600;
+}
+
+/* elementos con bordes y botones */
+.panel-card {
+    border: 2px solid var(--border);
+}
+
+.badge-accent {
+    border-color: var(--border);
+}
+
+.btn-oscuro {
+    background-color: var(--primary);
+    color: var(--link);
+}
+
+.btn-claro {
+    background-color: var(--accent-soft);
+    color: var(--primary);
 }
 
 /* COMENTARIOS */
@@ -224,15 +244,15 @@ nav {
 .comentarios{
     width: 90%;
     margin: 100px auto;
-    background-color: white;
+    background-color: var(--surface);
     padding: 50px;
     border-radius: 25px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow);
 }
 
 .comentarios h2{
     font-size: 40px;
-    color: #2d4059;
+    color: var(--primary);
     margin-bottom: 15px;
 }
 
@@ -251,10 +271,12 @@ nav {
 .form-comentarios textarea{
     width: 100%;
     padding: 18px;
-    border: 2px solid #dcdcdc;
+    border: 2px solid var(--border);
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    background: var(--surface-strong);
+    color: var(--text);
 }
 
 .form-comentarios textarea{
@@ -265,14 +287,14 @@ nav {
 .form-comentarios input:focus,
 .form-comentarios textarea:focus{
     outline: none;
-    border-color: #ffd369;
+    border-color: var(--accent);
 }
 
 .form-comentarios button{
     width: fit-content;
     padding: 15px 30px;
-    background-color: #2d4059;
-    color: white;
+    background-color: var(--primary);
+    color: var(--link);
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -281,8 +303,8 @@ nav {
 }
 
 .form-comentarios button:hover{
-    background-color: #ffd369;
-    color: #2d4059;
+    background-color: var(--accent-soft);
+    color: var(--primary);
     transform: translateY(-3px);
 }
 
@@ -300,13 +322,13 @@ nav {
 
 .comentario-ejemplo{
     width: 260px;
-    background-color: white;
+    background-color: var(--surface);
     padding: 25px;
     border-radius: 20px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow);
     text-align: center;
     transition: 0.3s;
-    border-top: 5px solid #ffd369;
+    border-top: 5px solid var(--accent-soft);
 }
 
 .comentario-ejemplo:hover{
@@ -316,7 +338,7 @@ nav {
 /* NOMBRE */
 
 .comentario-ejemplo h4{
-    color: #2d4059;
+    color: var(--primary);
     margin-bottom: 12px;
     font-size: 18px;
 }
@@ -326,7 +348,7 @@ nav {
 .comentario-ejemplo p{
     font-size: 14px;
     line-height: 1.7;
-    color: #555;
+    color: var(--muted);
 }
 
 /* BOTÓN VOLVER ARRIBA */
@@ -336,8 +358,8 @@ nav {
     bottom: 30px;
     right: 30px;
 
-    background-color: #2d4059;
-    color: white;
+    background-color: var(--primary);
+    color: var(--link);
 
     padding: 15px 22px;
 
@@ -347,7 +369,7 @@ nav {
 
     font-weight: 500;
 
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    box-shadow: var(--shadow);
 
     transition: 0.3s;
 
@@ -355,8 +377,8 @@ nav {
 }
 
 .btn-arriba:hover{
-    background-color: #ffd369;
-    color: #2d4059;
+    background-color: var(--accent-soft);
+    color: var(--primary);
 
     transform: translateY(-4px);
 }
