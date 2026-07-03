@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalas - Music Code</title>
+    <link rel="shortcut icon" href="../img/111.ico" type="x-icon">
+    <link rel="stylesheet" href="../css/estiloEscalas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="contenedor-nav">
+            <div class="logo">
+                <img src="../img/111.ico" alt="MusicCode">
+                <span>MusicCode</span>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <div class="nav-links">
+                <a href="../index.html#inicio" class="nav-link">Inicio</a>
+                <a href="../index.html#cursos" class="nav-link">Cursos</a>
+                <a href="../subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a>
+            </div>
+        </div>
+    </nav>
+    <!-- HERO -->
+    <section class="hero hero-escala">
+        <div class="overlay"></div>
+
+        <div class="hero-texto">
+            <h1>Escalas</h1>
+        </div>
+    </section>
+
+    <!-- INFOGRAFÍA -->
+    <section class="infografia">
+
+        <!-- BLOQUE 1 -->
+        <div class="bloque-info">
+            <div class="subtitulo-box">
+                <h2>¿Qué es una escala?</h2>
+            </div>
+
+            <div class="texto-info">
+                <p>
+                    Una escala musical es una sucesión ordenada de notas que suben o bajan en altura 🎶.
+                    Es la base para crear melodías y armonías.
+                    Por ejemplo, la escala de <span class="nota">Do mayor</span> está formada por:
+                    <span class="nota">Do - Re - Mi - Fa - Sol - La - Si - Do</span>.
+                </p>
+            </div>
+        </div>
+
+        <img src="../img/escalas1.jpg" class="imagen-extra-variable">
+
+        <!-- BLOQUE 2 -->
+        <div class="bloque-info reversa">
+            <div class="subtitulo-box">
+                <h2>Escala mayor</h2>
+            </div>
+
+            <div class="texto-info">
+                <p>
+                    La escala mayor tiene un sonido alegre y brillante. Se construye siguiendo un patrón:
+                    <strong>tono - tono - semitono - tono - tono - tono - semitono</strong>.
+                    Es una de las más utilizadas en la música moderna.
+                </p>
+            </div>
+        </div>
+
+        <img src="../img/escala2.jpg" class="imagen-extra">
+
+        <!-- BLOQUE 3 -->
+        <div class="bloque-info">
+            <div class="subtitulo-box">
+                <h2>Escala menor</h2>
+            </div>
+            <div class="texto-info">
+                <p>
+                    La escala menor tiene un sonido más melancólico o triste.
+                    Su fórmula es:
+                    <strong>tono - semitono - tono - tono - semitono - tono - tono</strong>.
+                    Un ejemplo es la escala de <span class="nota">La menor</span>.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- COMENTARIOS -->
+    <section class="comentarios">
+        <h2>¿Qué te pareció este contenido?</h2>
+
+        <p class="comentario-texto">
+            Comparte tu opinión o sugerencias.
+        </p>
+
+        <form class="form-comentarios" id="formComentarios">
+
+            <input type="text" placeholder="Tu nombre" id="inputNombre">
+            <textarea placeholder="Escribe tu comentario..." id="inputComentario"></textarea>
+
+            <button type="submit" id="btnPublicar">Publicar comentario</button>
+        </form>
+    </section>
+
+    <!-- LISTA -->
+    <div class="lista-comentarios">
+
+        <div class="comentario-ejemplo">
+            <h4>Mario</h4>
+            <p>Ahora entiendo mejor cómo funcionan las escalas.</p>
+        </div>
+
+        <div class="comentario-ejemplo">
+            <h4>Sofía</h4>
+            <p>La explicación fue clara y fácil de entender.</p>
+        </div>
+
+        <div class="comentario-ejemplo">
+            <h4>Diego</h4>
+            <p>Me gustaría ver ejercicios prácticos.</p>
+        </div>
+
+    </div>
+
+    <!-- BOTÓN -->
+    <a href="#top" class="btn-arriba">↑ Subir</a>
+    <script src="../js/app.js"></script>
+    <script src="../js/comentarios.js"></script>
+</body>
+
+</html>
