@@ -1,0 +1,175 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-toggle {
+    display: none; /* Oculto en escritorio */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+/* GENERAL */
+body {
+    background-color: #f5f5f7;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+}
+
+/* NAVBAR (igual que index) */
+nav {
+    background-color: #2d4059;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo span {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #ffd369;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.letrasG {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2d4059;
+}
+
+.letrasG em {
+    color: #ff7a00;
+}
+
+header p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* CONTENEDOR FORM */
+.tema-musical {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* FORM */
+.formulario-suscripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* CAMPOS */
+.campo label {
+    font-weight: 600;
+    color: #2d4059;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: #ff7a00;
+    box-shadow: 0 0 0 3px rgba(255,122,0,0.2);
+}
+
+/* BOTÓN */
+.btn-principal {
+    background-color: #ff7a00;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #e56700;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #2d4059;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}

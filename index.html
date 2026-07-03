@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Code</title>
+    <link rel="shortcut icon" href="img/111.ico" type="x-icon">
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="contenedor-nav">
+            <div class="logo">
+                <img src="img/111.ico" alt="MusicCode">
+                <span>MusicCode</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Activar modo oscuro" title="Cambiar tema">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+            </button>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breve introducción -->
+    <header class="hero" id="inicio">
+        <div class="hero-texto">
+            <h1 class="letrasG">Bienvenido a <em>MusicCode</em></h1>
+            <p>Aprende teoría musical de forma sencilla, práctica y gratuita.</p>
+            <a href="#cursos" class="btn-terciario">Explorar temas</a>
+        </div>
+
+        <div class="hero-img">
+            <img src="img/imagen1.jpg" alt="piano">
+        </div>
+    </header>
+
+    <!-- Sobre lo que trata -->
+    <section class="tema-musical">
+        <h2>¿Qué es MusicCode?</h2>
+        <p>
+            MusicCode es una plataforma educativa donde podrás aprender teoría musical
+            desde cero hasta nivel avanzado de manera sencilla y estructurada.
+        </p>
+    </section>
+
+    <!-- Parte cursos -->
+    <section class="tema-musical" id="cursos">
+        <h2>¿Qué quieres aprender?</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Notas musicales</h3>
+                <p>Aprende las bases de la música.</p>
+                <a href="subpáginas/notas.html" class="btn-terciario">Ver</a>
+            </div>
+
+            <div class="card">
+                <h3>Escalas</h3>
+                <p>Entiende cómo se construyen.</p>
+                <a href="subpáginas/escalas.html" class="btn-terciario">Ver</a>
+            </div>
+
+            <div class="card">
+                <h3>Acordes</h3>
+                <p>Domina la armonía.</p>
+                <a href="subpáginas/acordes.html" class="btn-terciario">Ver</a>
+            </div>
+            <div class="card">
+                <h3>Intervalos</h3>
+                <p>Aprende la distancia entre notas.</p>
+                <a href="subpáginas/intervalos.html" class="btn-terciario">Ver</a>
+            </div>
+
+            <div class="card">
+                <h3>Ritmo</h3>
+                <p>Domina el tiempo y la duración musical.</p>
+                <a href="subpáginas/ritmo.html" class="btn-terciario">Ver</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parte botón suscribirse -->
+    <section class="contenedor-botones">
+        <a href="subpáginas/Suscribirse.html" class="btn-terciario">Suscribirse</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MusicCode. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/interactivo.js"></script>
+</body>
+
+</html>
