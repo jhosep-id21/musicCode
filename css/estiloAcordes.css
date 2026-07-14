@@ -361,3 +361,77 @@ nav {
 
     transform: translateY(-4px);
 }
+
+/* FOOTER */
+footer {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* TABLA DE ACORDES */
+.tabla-acordes-seccion {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.tabla-acordes-seccion h2 {
+    color: #2d4059;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.tabla-acordes-texto {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contenedor-tabla {
+    overflow-x: auto;
+}
+
+.tabla-acordes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-acordes th,
+.tabla-acordes td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tabla-acordes th {
+    background-color: #2d4059;
+    color: white;
+}
+
+.tabla-acordes tr:nth-child(even) td {
+    background-color: #f5f5f7;
+}
+
+.btn-escuchar {
+    background-color: #ff7a00;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.btn-escuchar:hover {
+    background-color: #e56700;
+    transform: scale(1.1);
+}

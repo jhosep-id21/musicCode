@@ -352,3 +352,86 @@ nav {
 
     transform: translateY(-4px);
 }
+
+.btn-terciario {
+    background-color: #ff7a00;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-terciario:hover {
+    background-color: #e56700;
+}
+
+.btn-terciario:active {
+    transform: scale(0.95);
+}
+
+/* FOOTER */
+footer {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* REPRODUCTOR DE EJEMPLOS */
+.reproductor {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.reproductor h2 {
+    color: #2d4059;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.reproductor-texto {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.notas-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.btn-nota {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: #415b7c;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-nota:hover {
+    background-color: #2d4059;
+}
+
+.btn-nota.activo {
+    background-color: #ff7a00;
+    transform: scale(1.15);
+}

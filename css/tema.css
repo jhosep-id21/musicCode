@@ -1,0 +1,191 @@
+/* Modo oscuro compartido por todas las páginas.
+   Se apoya en las clases comunes que ya existen en cada hoja de estilo. */
+
+.toggle-tema {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.toggle-tema:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Redes sociales del footer (cuentas ficticias de ejemplo) */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 12px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.85;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.social-link:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+body.dark-mode {
+    background-color: #121826;
+    color: #e4e6eb;
+}
+
+body.dark-mode,
+body.dark-mode * {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode nav {
+    background-color: #0d1320;
+}
+
+body.dark-mode .tema-musical,
+body.dark-mode .card,
+body.dark-mode .comentarios,
+body.dark-mode .comentario-ejemplo,
+body.dark-mode .texto-info,
+body.dark-mode .form-comentarios,
+body.dark-mode .mensaje-exito,
+body.dark-mode .contenedor-tabla,
+body.dark-mode table,
+body.dark-mode .reproductor,
+body.dark-mode .escalas-interactivas,
+body.dark-mode .metronomo-seccion,
+body.dark-mode .tabla-acordes-seccion {
+    background-color: #1b2233;
+    color: #e4e6eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .reproductor h2,
+body.dark-mode .escalas-interactivas h2,
+body.dark-mode .metronomo-seccion h2,
+body.dark-mode .tabla-acordes-seccion h2 {
+    color: #ffd369;
+}
+
+body.dark-mode .reproductor-texto,
+body.dark-mode .escalas-texto,
+body.dark-mode .metronomo-texto,
+body.dark-mode .tabla-acordes-texto {
+    color: #b8bdc9;
+}
+
+body.dark-mode .campo-escala label,
+body.dark-mode .bpm-control label,
+body.dark-mode .compas-control label {
+    color: #ffd369;
+}
+
+body.dark-mode .campo-escala select,
+body.dark-mode .compas-control select {
+    background-color: #232c42;
+    color: #e4e6eb;
+    border-color: #3a445e;
+}
+
+body.dark-mode .subtitulo-box {
+    background-color: #2a3550;
+}
+
+body.dark-mode .card {
+    background-color: #1e2a44;
+}
+
+body.dark-mode .card h3 {
+    color: #ffd369;
+}
+
+body.dark-mode .card p {
+    color: #b8bdc9;
+}
+
+body.dark-mode .comentarios h2,
+body.dark-mode .tema-musical h2,
+body.dark-mode .campo label,
+body.dark-mode .letrasG,
+body.dark-mode .mensaje-exito h1 {
+    color: #ffd369;
+}
+
+body.dark-mode .mensaje-exito p {
+    color: #b8bdc9;
+}
+
+body.dark-mode .comentario-ejemplo h4 {
+    color: #ffd369;
+}
+
+body.dark-mode .comentario-ejemplo p,
+body.dark-mode header p,
+body.dark-mode .comentario-texto {
+    color: #b8bdc9;
+}
+
+body.dark-mode .form-comentarios input,
+body.dark-mode .form-comentarios textarea,
+body.dark-mode .campo input,
+body.dark-mode .campo select,
+body.dark-mode .campo textarea {
+    background-color: #232c42;
+    color: #e4e6eb;
+    border-color: #3a445e;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+    border-color: #3a445e;
+}
+
+body.dark-mode tr:nth-child(even) td {
+    background-color: #202a41;
+}
+
+body.dark-mode footer {
+    background-color: #0d1320;
+}
+
+body.dark-mode .btn-arriba {
+    background-color: #ffd369;
+    color: #121826;
+}
+
+body.dark-mode .btn-arriba:hover {
+    background-color: #ff7a00;
+    color: #fff;
+}
+
+body.dark-mode .nota {
+    color: #ffd369;
+}
+
+body.dark-mode .redes-sociales h2 {
+    color: #ffd369;
+}
+
+body.dark-mode .red-social {
+    background-color: #1b2233;
+    color: #e4e6eb;
+}
+
+body.dark-mode .mensaje-confirmacion {
+    color: #ffd369;
+}

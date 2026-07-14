@@ -7,7 +7,9 @@
     <title>Notas - Music Code</title>
     <link rel="shortcut icon" href="../img/111.ico" type="x-icon">
     <link rel="stylesheet" href="../css/estiloNotas.css">
+    <link rel="stylesheet" href="../css/tema.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>if (localStorage.getItem('tema') === 'oscuro' || (!localStorage.getItem('tema') && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.style.backgroundColor = '#121826'; }</script>
 </head>
 
 <body id="top">
@@ -18,11 +20,13 @@
                 <img src="../img/111.ico" alt="MusicCode">
                 <span>MusicCode</span>
             </div>
+            <button class="toggle-tema" aria-label="Activar modo oscuro">🌙</button>
             <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             <div class="nav-links">
                 <a href="../index.html#inicio" class="nav-link">Inicio</a>
                 <a href="../index.html#cursos" class="nav-link">Cursos</a>
                 <a href="../subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a>
+                <a href="../subpáginas/contacto.html" class="nav-link">Contáctanos</a>
             </div>
         </div>
     </nav>
@@ -137,6 +141,25 @@
 
     </section>
 
+    <!-- REPRODUCTOR DE EJEMPLOS -->
+
+    <section class="reproductor">
+        <h2>Escucha las notas</h2>
+        <p class="reproductor-texto">Pulsa una nota para escuchar cómo suena.</p>
+
+        <div class="notas-botones">
+            <button class="btn-nota" data-nota="Do">Do</button>
+            <button class="btn-nota" data-nota="Re">Re</button>
+            <button class="btn-nota" data-nota="Mi">Mi</button>
+            <button class="btn-nota" data-nota="Fa">Fa</button>
+            <button class="btn-nota" data-nota="Sol">Sol</button>
+            <button class="btn-nota" data-nota="La">La</button>
+            <button class="btn-nota" data-nota="Si">Si</button>
+        </div>
+
+        <button class="btn-terciario" id="btnEscalaCompleta">▶ Reproducir escala completa</button>
+    </section>
+
     <!-- COMENTARIOS -->
 
     <section class="comentarios">
@@ -183,11 +206,25 @@
     </div>
 
     </div>
+
+    <footer>
+        <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="X">✖️</a>
+        </div>
+        <p>&copy; 2026 MusicCode. Todos los derechos reservados.</p>
+    </footer>
+
     <a href="#top" class="btn-arriba">
         ↑ Subir
     </a>
     <script src="../js/app.js"></script>
+    <script src="../js/tema.js"></script>
     <script src="../js/comentarios.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/reproductor.js"></script>
 </body>
 
 </html>

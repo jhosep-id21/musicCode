@@ -7,7 +7,9 @@
     <title>Escalas - Music Code</title>
     <link rel="shortcut icon" href="../img/111.ico" type="x-icon">
     <link rel="stylesheet" href="../css/estiloEscalas.css">
+    <link rel="stylesheet" href="../css/tema.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>if (localStorage.getItem('tema') === 'oscuro' || (!localStorage.getItem('tema') && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.style.backgroundColor = '#121826'; }</script>
 </head>
 
 <body>
@@ -18,11 +20,13 @@
                 <img src="../img/111.ico" alt="MusicCode">
                 <span>MusicCode</span>
             </div>
+            <button class="toggle-tema" aria-label="Activar modo oscuro">🌙</button>
             <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             <div class="nav-links">
                 <a href="../index.html#inicio" class="nav-link">Inicio</a>
                 <a href="../index.html#cursos" class="nav-link">Cursos</a>
                 <a href="../subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a>
+                <a href="../subpáginas/contacto.html" class="nav-link">Contáctanos</a>
             </div>
         </div>
     </nav>
@@ -90,6 +94,46 @@
 
     </section>
 
+    <!-- ESCALAS INTERACTIVAS -->
+    <section class="escalas-interactivas">
+        <h2>Explora las escalas</h2>
+        <p class="escalas-texto">Elige una nota raíz y un tipo de escala para verla y escucharla.</p>
+
+        <div class="controles-escala">
+            <div class="campo-escala">
+                <label for="notaRaiz">Nota raíz:</label>
+                <select id="notaRaiz">
+                    <option value="Do">Do</option>
+                    <option value="Do#">Do#</option>
+                    <option value="Re">Re</option>
+                    <option value="Re#">Re#</option>
+                    <option value="Mi">Mi</option>
+                    <option value="Fa">Fa</option>
+                    <option value="Fa#">Fa#</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Sol#">Sol#</option>
+                    <option value="La">La</option>
+                    <option value="La#">La#</option>
+                    <option value="Si">Si</option>
+                </select>
+            </div>
+
+            <div class="campo-escala">
+                <label for="tipoEscala">Tipo de escala:</label>
+                <select id="tipoEscala">
+                    <option value="mayor">Mayor</option>
+                    <option value="menor">Menor natural</option>
+                </select>
+            </div>
+
+            <button class="btn-terciario" id="btnGenerarEscala">Generar escala</button>
+        </div>
+
+        <div class="resultado-escala" id="resultadoEscala"></div>
+
+        <button class="btn-terciario" id="btnReproducirEscala" style="display: none;">▶ Reproducir escala</button>
+    </section>
+
     <!-- COMENTARIOS -->
     <section class="comentarios">
         <h2>¿Qué te pareció este contenido?</h2>
@@ -127,10 +171,23 @@
 
     </div>
 
+    <footer>
+        <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="X">✖️</a>
+        </div>
+        <p>&copy; 2026 MusicCode. Todos los derechos reservados.</p>
+    </footer>
+
     <!-- BOTÓN -->
     <a href="#top" class="btn-arriba">↑ Subir</a>
     <script src="../js/app.js"></script>
+    <script src="../js/tema.js"></script>
     <script src="../js/comentarios.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/escalas.js"></script>
 </body>
 
 </html>

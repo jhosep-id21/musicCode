@@ -7,7 +7,9 @@
     <title>Acordes - Music Code</title>
     <link rel="shortcut icon" href="../img/111.ico" type="x-icon">
     <link rel="stylesheet" href="../css/estiloAcordes.css">
+    <link rel="stylesheet" href="../css/tema.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>if (localStorage.getItem('tema') === 'oscuro' || (!localStorage.getItem('tema') && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.style.backgroundColor = '#121826'; }</script>
 </head>
 
 <body id="top">
@@ -18,11 +20,13 @@
                 <img src="../img/111.ico" alt="MusicCode">
                 <span>MusicCode</span>
             </div>
+            <button class="toggle-tema" aria-label="Activar modo oscuro">🌙</button>
             <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             <div class="nav-links">
                 <a href="../index.html#inicio" class="nav-link">Inicio</a>
                 <a href="../index.html#cursos" class="nav-link">Cursos</a>
                 <a href="../subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a>
+                <a href="../subpáginas/contacto.html" class="nav-link">Contáctanos</a>
             </div>
         </div>
     </nav>
@@ -111,6 +115,81 @@
 
     </section>
 
+    <!-- TABLA DE ACORDES -->
+    <section class="tabla-acordes-seccion">
+        <h2>Tabla de acordes</h2>
+        <p class="tabla-acordes-texto">Pulsa 🔊 para escuchar cómo suena cada acorde.</p>
+
+        <div class="contenedor-tabla">
+            <table class="tabla-acordes">
+                <thead>
+                    <tr>
+                        <th>Acorde</th>
+                        <th>Notas</th>
+                        <th>Tipo</th>
+                        <th>Escuchar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Do (C)</td>
+                        <td>Do - Mi - Sol</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="Do,Mi,Sol">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Re (D)</td>
+                        <td>Re - Fa# - La</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="Re,Fa#,La">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Mi (E)</td>
+                        <td>Mi - Sol# - Si</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="Mi,Sol#,Si">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Fa (F)</td>
+                        <td>Fa - La - Do</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="Fa,La,Do">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Sol (G)</td>
+                        <td>Sol - Si - Re</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="Sol,Si,Re">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>La (A)</td>
+                        <td>La - Do# - Mi</td>
+                        <td>Mayor</td>
+                        <td><button class="btn-escuchar" data-notas="La,Do#,Mi">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>La menor (Am)</td>
+                        <td>La - Do - Mi</td>
+                        <td>Menor</td>
+                        <td><button class="btn-escuchar" data-notas="La,Do,Mi">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Mi menor (Em)</td>
+                        <td>Mi - Sol - Si</td>
+                        <td>Menor</td>
+                        <td><button class="btn-escuchar" data-notas="Mi,Sol,Si">🔊</button></td>
+                    </tr>
+                    <tr>
+                        <td>Re menor (Dm)</td>
+                        <td>Re - Fa - La</td>
+                        <td>Menor</td>
+                        <td><button class="btn-escuchar" data-notas="Re,Fa,La">🔊</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
     <!-- COMENTARIOS -->
 
     <section class="comentarios">
@@ -157,9 +236,23 @@
     </div>
 
     </div>
+
+    <footer>
+        <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="X">✖️</a>
+        </div>
+        <p>&copy; 2026 MusicCode. Todos los derechos reservados.</p>
+    </footer>
+
     <a href="#top" class="btn-arriba">Subir</a>
     <script src="../js/app.js"></script>
+    <script src="../js/tema.js"></script>
     <script src="../js/comentarios.js"></script>
+    <script src="../js/audio.js"></script>
+    <script src="../js/acordes.js"></script>
 </body>
 
 </html>

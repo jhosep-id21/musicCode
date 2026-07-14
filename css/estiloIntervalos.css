@@ -342,3 +342,12 @@ nav {
         display: flex;
     }
 }
+
+/* FOOTER */
+footer {
+    background-color: #2d4059;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
