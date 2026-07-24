@@ -214,6 +214,96 @@ footer {
     margin-top: 30px;
 }
 
+/* IDENTIFICADOR DE INTERVALOS */
+.identificador-intervalos {
+    text-align: center;
+}
+
+.selectores-intervalo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.campo-intervalo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.campo-intervalo label {
+    font-weight: 600;
+    color: #2d4059;
+    font-size: 14px;
+}
+
+.campo-intervalo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.resultado-intervalo {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #2d4059;
+    min-height: 24px;
+}
+
+/* JUEGO ADIVINA LA NOTA */
+.juego-notas {
+    text-align: center;
+}
+
+.botones-juego {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.notas-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn-nota {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: #415b7c;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-nota:hover {
+    background-color: #2d4059;
+}
+
+.resultado-juego {
+    font-weight: 600;
+    color: #2d4059;
+    min-height: 24px;
+}
+
+.puntaje-juego {
+    color: #555;
+    margin-top: 8px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .hero {

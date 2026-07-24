@@ -20,7 +20,6 @@
                 <img src="img/111.ico" alt="MusicCode">
                 <span>MusicCode</span>
             </div>
-            <button class="toggle-tema" aria-label="Activar modo oscuro">🌙</button>
             <button class="menu-toggle" aria-label="Abrir menú">☰</button>
             <div class="nav-links">
                 <a href="#inicio" class="nav-link">Inicio</a>
@@ -28,6 +27,7 @@
                 <a href="subpáginas/Suscribirse.html" class="nav-link">Suscribirse</a> <!-- Quité el / -->
                 <a href="subpáginas/contacto.html" class="nav-link">Contáctanos</a>
             </div>
+            <button class="toggle-tema" aria-label="Activar modo oscuro">🌙</button>
         </div>
     </nav>
 
@@ -94,6 +94,78 @@
         <a href="subpáginas/Suscribirse.html" class="btn-terciario">Suscribirse</a> <!-- Quité el / -->
     </section>
 
+    <!-- IDENTIFICADOR DE INTERVALOS -->
+    <section class="tema-musical identificador-intervalos">
+        <h2>Identificador de intervalos</h2>
+        <p>Elige dos notas y descubre qué intervalo forman entre ellas.</p>
+
+        <div class="selectores-intervalo">
+            <div class="campo-intervalo">
+                <label for="notaUno">Primera nota:</label>
+                <select id="notaUno">
+                    <option value="Do">Do</option>
+                    <option value="Do#">Do#</option>
+                    <option value="Re">Re</option>
+                    <option value="Re#">Re#</option>
+                    <option value="Mi">Mi</option>
+                    <option value="Fa">Fa</option>
+                    <option value="Fa#">Fa#</option>
+                    <option value="Sol">Sol</option>
+                    <option value="Sol#">Sol#</option>
+                    <option value="La">La</option>
+                    <option value="La#">La#</option>
+                    <option value="Si">Si</option>
+                </select>
+            </div>
+
+            <div class="campo-intervalo">
+                <label for="notaDos">Segunda nota:</label>
+                <select id="notaDos">
+                    <option value="Do">Do</option>
+                    <option value="Do#">Do#</option>
+                    <option value="Re">Re</option>
+                    <option value="Re#">Re#</option>
+                    <option value="Mi">Mi</option>
+                    <option value="Fa">Fa</option>
+                    <option value="Fa#">Fa#</option>
+                    <option value="Sol" selected>Sol</option>
+                    <option value="Sol#">Sol#</option>
+                    <option value="La">La</option>
+                    <option value="La#">La#</option>
+                    <option value="Si">Si</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn-terciario" id="btnCalcularIntervalo">Calcular intervalo</button>
+
+        <p class="resultado-intervalo" id="resultadoIntervalo"></p>
+    </section>
+
+    <!-- JUEGO ADIVINA LA NOTA -->
+    <section class="tema-musical juego-notas">
+        <h2>Juego: adivina la nota</h2>
+        <p>Pulsa "Nueva nota" para escuchar un sonido y adivina cuál nota es.</p>
+
+        <div class="botones-juego">
+            <button class="btn-terciario" id="btnNuevaNota">🎧 Nueva nota</button>
+            <button class="btn-terciario" id="btnEscucharOtraVez">🔊 Escuchar de nuevo</button>
+        </div>
+
+        <div class="notas-botones">
+            <button class="btn-nota" data-nota="Do">Do</button>
+            <button class="btn-nota" data-nota="Re">Re</button>
+            <button class="btn-nota" data-nota="Mi">Mi</button>
+            <button class="btn-nota" data-nota="Fa">Fa</button>
+            <button class="btn-nota" data-nota="Sol">Sol</button>
+            <button class="btn-nota" data-nota="La">La</button>
+            <button class="btn-nota" data-nota="Si">Si</button>
+        </div>
+
+        <p class="resultado-juego" id="resultadoJuego">Pulsa "Nueva nota" para empezar.</p>
+        <p class="puntaje-juego" id="puntajeJuego">Aciertos: 0 / Intentos: 0</p>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-social">
@@ -106,6 +178,9 @@
     </footer>
     <script src="js/app.js"></script>
     <script src="js/tema.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/intervalos.js"></script>
+    <script src="js/juegoNotas.js"></script>
 </body>
 
 </html>

@@ -21,6 +21,17 @@
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+/* Empuja el menú (o el botón hamburguesa en móvil) hacia la derecha,
+   para que el botón de tema quede pegado justo después de los enlaces */
+.contenedor-nav {
+    justify-content: flex-start;
+}
+
+.nav-links,
+.menu-toggle {
+    margin-left: auto;
+}
+
 /* Redes sociales del footer (cuentas ficticias de ejemplo) */
 .footer-social {
     display: flex;
@@ -91,15 +102,26 @@ body.dark-mode .tabla-acordes-texto {
 
 body.dark-mode .campo-escala label,
 body.dark-mode .bpm-control label,
-body.dark-mode .compas-control label {
+body.dark-mode .compas-control label,
+body.dark-mode .campo-intervalo label {
     color: #ffd369;
 }
 
 body.dark-mode .campo-escala select,
-body.dark-mode .compas-control select {
+body.dark-mode .compas-control select,
+body.dark-mode .campo-intervalo select {
     background-color: #232c42;
     color: #e4e6eb;
     border-color: #3a445e;
+}
+
+body.dark-mode .resultado-intervalo,
+body.dark-mode .resultado-juego {
+    color: #ffd369;
+}
+
+body.dark-mode .puntaje-juego {
+    color: #b8bdc9;
 }
 
 body.dark-mode .subtitulo-box {
